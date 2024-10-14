@@ -25,5 +25,7 @@ public class Book {
         Book loveStory = new Book("춘향전");
         Book emptyBook = new Book();
         loveStory.show();
+        littlePrince.show();
+        emptyBook.show();
     }
 }
