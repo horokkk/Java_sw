@@ -19,8 +19,8 @@ public class Person {
         name = "EWHA";
         iD = "2176101";
     }
-    public Person(String name, String iD){
+    public Person(String name, int age){
         this.name = name;
-        this.iD = iD;
+        this.age = age;
     }
 }
