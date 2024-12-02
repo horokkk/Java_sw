@@ -21,6 +21,7 @@ public class IngredientBox extends Box {
         System.out.println();
     }
 
+
     public boolean consume(){
         if(size==0){
             return false;
