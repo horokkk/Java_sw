@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class FileInputStreamEx2 {
     public static void main(String[] args) {
-        String fileName = "c:/Temp/outputByteStream";
+        String fileName = "c:/Temp/outputByteStream2";
         FileInputStream fis = null;
         try{
             //읽을 파일의 경로를 지정
@@ -15,7 +15,7 @@ public class FileInputStreamEx2 {
             //파일에서 데이터를 하나씩 읽어온다. -1은 파일의 끝을 의미
             while((data = fis.read())!=-1){
                 //읽어온 데이터를 문자로 변환하여 출력
-                System.out.print((char)data);  //그냥 data 하면 바이너리로 출력, (char)data 하면 문자로 출력
+                System.out.print(data);  //그냥 data 하면 정수로 출력
             }
         }catch(IOException e){
             //파일 입출력 예외를 처리
